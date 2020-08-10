@@ -11,3 +11,11 @@ Prosty projekt, My notes to drobna aplikacja pozwalająca użytkownikowi na doda
 5. "Cancel" On add Form - cancels all actions hides the form and clears all of inputs inside to prepare form for future use
 
 ### Instrukcja
+1. Kliknij „Dodaj notatkę” -> dodaj nową notatkę
+2. Kliknij „Usuń wszystkie notatki” - usuwa wszystkie istniejące notatki
+3. Kosz na notatkę - usuń określoną notatkę
+4. „Zapisz” - w formularzu dodawania po kliknięciu przycisku „Dodaj notatkę” -> dodaje nową notatkę i zamyka formularz
+5. „Anuluj” Przy dodawaniu formularza - anuluje wszystkie akcje, ukrywa formularz i czyści wszystkie dane wejściowe w celu przygotowania formularza do przyszłego użycia
+
+### URL of Project
+**https://kruchy1980.github.io/notes/**
