@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/bookmark-icon/notes.svg">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google fonts import - Dancing Script  and Montserat-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/ac750a2c2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <h1>
+            <i class="fas fa-sticky-note">My Notes</i>
+        </h1>
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus-circle"> Add Note</i></button>
+            <button class="delete-all icon"><i class="fas fa-minus-circle"> Delete all notes</i></button>
+        </div>
+    </div>
+    <!-- Note area - responsible for notes handling -->
+    <div class="note-area">
+
+    </div>
+
+    <!-- The adding notes panel -->
+    <div class="note-panel">
+        <h3 class="panel-title">Add Note</h3>
+        <label for="category">Choose Category:</label>
+        <select id="category">
+            <option value="0" disabled selected>-- Choose the category --</option>
+            <option value="1">Shopping</option>
+            <option value="2">Activity</option>
+            <option value="3">Work</option>
+            <option value="4">Other</option>
+        </select>
+        <!-- Note content  -->
+        <label for="text">Enter the note content:</label>
+        <textarea id="text"></textarea>
+
+        <!-- Error display paragraph -->
+        <p class="error ">Fill up all fields!</p>
+        <!-- Handling add message buttons -->
+        <div class="panel-buttons ">
+            <button class="save icon "><i class="fas fa-save "> Save</i></button>
+            <button class="cancel icon "><i class="far fa-window-close "> Cancel</i></button>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js "></script>
+</body>
+
+</html>

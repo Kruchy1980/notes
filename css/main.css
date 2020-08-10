@@ -1,0 +1,201 @@
+/* Main */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Main body */
+
+body {
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ddd;
+}
+
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 120px;
+    transition: all 0.5s;
+}
+
+@media (min-width: 580px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        height: 120px;
+    }
+}
+
+
+/* Menu buttons */
+
+.menu button,
+.note-panel .save,
+.note-panel .cancel {
+    padding: 12px 25px;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.menu button:hover,
+.note-panel .save:hover,
+.note-panel .cancel:hover {
+    background-color: #333;
+    color: #ddd;
+}
+
+
+/* Icon */
+
+.icon {
+    margin-right: 10px;
+}
+
+
+/* Add button  */
+
+.add {
+    margin-right: 20px;
+}
+
+
+/* Note area */
+
+.note-area {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+/* Notes */
+
+.note {
+    margin: 40px 20px;
+    width: 280px;
+    background-color: #e2e207;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+
+/* Note Header */
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00000024;
+}
+
+
+/* Note delete button */
+
+.note-header .delete-note {
+    background: none;
+    font-size: 20px;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 4px;
+}
+
+
+/* Removing the margin from the icon here */
+
+.note-header .delete-note .icon {
+    margin-right: -10px;
+}
+
+.note-header .delete-note:hover {
+    color: #b90303;
+}
+
+
+/* Note body */
+
+.note-body {
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+
+/* Note panel */
+
+.note-panel {
+    display: none;
+    /* Will be replaced by display: flex*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 0;
+    width: 95%;
+    max-width: 500px;
+    background-color: #eee;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+}
+
+
+/* Panel Title */
+
+.panel-title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+
+/* Panel labels */
+
+.note-panel label {
+    margin-bottom: 20px;
+}
+
+
+/* Inputs of panel */
+
+.note-panel #category,
+.note-panel #text {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 90%;
+    max-height: 600px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+/* Error display */
+
+.note-panel .error {
+    margin-bottom: 20px;
+    color: #ff0000;
+    visibility: hidden;
+}
